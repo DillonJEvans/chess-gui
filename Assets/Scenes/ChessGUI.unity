@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -207,6 +207,153 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &522206305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522206306}
+  - component: {fileID: 522206308}
+  - component: {fileID: 522206307}
+  - component: {fileID: 522206309}
+  m_Layer: 0
+  m_Name: Pieces
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &522206306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522206305}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 765022368}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!483693784 &522206307
+TilemapRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522206305}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_ChunkSize: {x: 32, y: 32, z: 32}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_MaxChunkCount: 16
+  m_MaxFrameAge: 16
+  m_SortOrder: 0
+  m_Mode: 0
+  m_DetectChunkCullingBounds: 0
+  m_MaskInteraction: 0
+--- !u!1839735485 &522206308
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522206305}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!114 &522206309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522206305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f993df8620599424b9394c941386ca96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game: {fileID: 765022369}
+  Pieces: {fileID: 522206308}
+  WhiteKing: {fileID: 11400000, guid: 2512bebfa6667814ea37f9da117430b8, type: 2}
+  WhiteQueen: {fileID: 11400000, guid: bf9bc24f1526ec941b38806897cb37d4, type: 2}
+  WhiteRook: {fileID: 11400000, guid: 2bb885c7c61d20b428820e0efa6f0ab1, type: 2}
+  WhiteBishop: {fileID: 11400000, guid: 676fcd1c2cc5ff640959d14595da07c8, type: 2}
+  WhiteKnight: {fileID: 11400000, guid: 8919eea30b5a8924b903a77fa33b11ba, type: 2}
+  WhitePawn: {fileID: 11400000, guid: 271d25a98a5260340b08d791b17908b6, type: 2}
+  BlackKing: {fileID: 11400000, guid: 87bfe28d99a0afa4ea04e084ed766391, type: 2}
+  BlackQueen: {fileID: 11400000, guid: bb5eb47d75223084b98be5728ff115d0, type: 2}
+  BlackRook: {fileID: 11400000, guid: b5d1c0d9bcdb7a644ac94ac8f764ea96, type: 2}
+  BlackBishop: {fileID: 11400000, guid: 8f59c1698b9a16d43913dc38d821d46c, type: 2}
+  BlackKnight: {fileID: 11400000, guid: e2ea73a16f4678b4aa51887c181f3e4c, type: 2}
+  BlackPawn: {fileID: 11400000, guid: c6227388b033f1c4ab7f0e4d0670ac67, type: 2}
 --- !u!1 &765022366
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +397,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1595459455}
+  - {fileID: 522206306}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -262,22 +410,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 765022366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4fd0ce174ce9194b9f88c85cf634faf, type: 3}
+  m_Script: {fileID: 11500000, guid: 31320b8aa7b980e4698cbff90129f69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Board: {fileID: 1595459457}
-  WhiteKing: {fileID: 11400000, guid: 2512bebfa6667814ea37f9da117430b8, type: 2}
-  WhiteQueen: {fileID: 11400000, guid: bf9bc24f1526ec941b38806897cb37d4, type: 2}
-  WhiteRook: {fileID: 11400000, guid: 2bb885c7c61d20b428820e0efa6f0ab1, type: 2}
-  WhiteBishop: {fileID: 11400000, guid: 676fcd1c2cc5ff640959d14595da07c8, type: 2}
-  WhiteKnight: {fileID: 11400000, guid: 8919eea30b5a8924b903a77fa33b11ba, type: 2}
-  WhitePawn: {fileID: 11400000, guid: 271d25a98a5260340b08d791b17908b6, type: 2}
-  BlackKing: {fileID: 11400000, guid: 87bfe28d99a0afa4ea04e084ed766391, type: 2}
-  BlackQueen: {fileID: 11400000, guid: bb5eb47d75223084b98be5728ff115d0, type: 2}
-  BlackRook: {fileID: 11400000, guid: b5d1c0d9bcdb7a644ac94ac8f764ea96, type: 2}
-  BlackBishop: {fileID: 11400000, guid: 8f59c1698b9a16d43913dc38d821d46c, type: 2}
-  BlackKnight: {fileID: 11400000, guid: e2ea73a16f4678b4aa51887c181f3e4c, type: 2}
-  BlackPawn: {fileID: 11400000, guid: c6227388b033f1c4ab7f0e4d0670ac67, type: 2}
 --- !u!1 &1595459454
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +424,7 @@ GameObject:
   - component: {fileID: 1595459455}
   - component: {fileID: 1595459457}
   - component: {fileID: 1595459456}
+  - component: {fileID: 1595459458}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -304,7 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595459454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -398,3 +534,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1595459458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595459454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fa2cb0563d1ee4d8e600ff9c013521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Board: {fileID: 1595459457}
+  DefaultTile: {fileID: 11400000, guid: fcde1f3195bb6dd43a3bf368bd7215db, type: 2}
+  LightSquareColor: {r: 0.94, g: 0.85, b: 0.71, a: 1}
+  DarkSquareColor: {r: 0.71, g: 0.53, b: 0.39, a: 1}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: WhiteQueen
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1976559812, guid: b9a31f7d3a89a4e4886b509273bb8589, type: 3}
+  m_Sprite: {fileID: 268783351, guid: 68cb9646e8d73c24e83a3cf227072edf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

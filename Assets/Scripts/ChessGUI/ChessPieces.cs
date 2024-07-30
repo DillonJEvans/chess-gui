@@ -1,15 +1,12 @@
-#nullable enable
-
-
-using Chess;
 using Chess.Core;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 
-public class ChessGame : MonoBehaviour
+public class ChessPieces : MonoBehaviour
 {
-    public Tilemap Board;
+    public ChessGame Game;
+    public Tilemap Pieces;
 
     [Header("White Pieces")]
     public Tile WhiteKing;
@@ -28,8 +25,16 @@ public class ChessGame : MonoBehaviour
     public Tile BlackPawn;
 
 
-    [HideInInspector]
-    public Game game = new();
+    #nullable enable
+
+
+    private void Start()
+    {
+        if (Pieces == null)
+        {
+            Pieces = GetComponent<Tilemap>();
+        }
+    }
 
 
     private void Update()
@@ -38,7 +43,9 @@ public class ChessGame : MonoBehaviour
         {
             for (int y = 0; y < 8; y++)
             {
-                Board.SetTile(new Vector3Int(x, y, 0), PieceToTile(game.GetPiece(x, y)));
+                Piece? piece = Game.Game.GetPiece(x, y);
+                Tile? tile = PieceToTile(piece);
+                Pieces.SetTile(new Vector3Int(x, y), tile);
             }
         }
     }
