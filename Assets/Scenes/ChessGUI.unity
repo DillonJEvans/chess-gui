@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 765022368}
   - component: {fileID: 765022367}
   - component: {fileID: 765022369}
+  - component: {fileID: 765022370}
   m_Layer: 0
   m_Name: Chess
   m_TagString: Untagged
@@ -413,6 +414,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31320b8aa7b980e4698cbff90129f69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &765022370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765022366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ca5283138bd4e489b2bae4359e85b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game: {fileID: 765022369}
+  Board: {fileID: 1595459457}
 --- !u!1 &1595459454
 GameObject:
   m_ObjectHideFlags: 0
