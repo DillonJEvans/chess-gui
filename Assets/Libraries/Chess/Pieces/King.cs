@@ -2,6 +2,7 @@
 
 
 using Chess.Core;
+using System;
 using System.Collections.Generic;
 
 
@@ -42,6 +43,12 @@ namespace Chess.Pieces
                 AddCastlingMove(psuedoLegalMoves, Queenside);
             }
             return psuedoLegalMoves;
+        }
+
+
+        protected internal override bool IsAttacking(Position position)
+        {
+            return Math.Abs(Position.X - position.X) + Math.Abs(Position.Y - position.Y) == 1;
         }
 
 

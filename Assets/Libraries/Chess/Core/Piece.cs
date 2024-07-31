@@ -67,7 +67,7 @@ namespace Chess.Core
         /// <summary>Determines if this piece is attacking a position on the board.</summary>
         /// <param name="position">The position to check if this piece is attacking.</param>
         /// <returns>True if this piece is attacking the position; otherwise, false.</returns>
-        internal bool IsAttacking(Position position)
+        protected internal virtual bool IsAttacking(Position position)
         {
             IEnumerable<PsuedoLegalMove> psuedoLegalMoves = GeneratePsuedoLegalMoves();
             return psuedoLegalMoves.Any(move => move.Destination == position);
