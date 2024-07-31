@@ -51,7 +51,7 @@ public class ChessPieces : MonoBehaviour
     }
 
 
-    private Tile? PieceToTile(Piece? piece)
+    public Tile? PieceToTile(Piece? piece)
     {
         return piece?.ColorSymbol switch
         {

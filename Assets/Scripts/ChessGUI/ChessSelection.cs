@@ -47,6 +47,7 @@ public class ChessSelection : MonoBehaviour
                 SelectedPiece = null;
             }
         }
+        Debug.Log(SelectedPiece);
     }
 
 
